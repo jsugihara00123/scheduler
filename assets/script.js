@@ -57,7 +57,7 @@ $(document).ready(function() {
   
     $(id1).val(localStorage.getItem(id2));
 
-    console.log("id1 & id2: " + id1 + ", " + id2)
+    console.log("id2: " + id2)
 
   }
 
