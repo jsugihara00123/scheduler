@@ -47,15 +47,21 @@ $(document).ready(function() {
     localStorage.setItem(selectedTimeSlot, toDoDescription);
 
     console.log('localStorage: ' + selectedTimeSlot + ': ' + toDoDescription);
+
+    $("#addedToLS").text( "Appointment added to LocalStorage ✅" );
   })
 
-  for (var i = 22; i > localStorage.length; i--){
+  for (var i = 20; i > 4; i--){
     var id1 = '#hour_' + i + ' .description'
     var id2 = 'hour_' + i;
   
     $(id1).val(localStorage.getItem(id2));
 
+    console.log("id1 & id2: " + id1 + ", " + id2)
+
   }
 
   timeCompare();
 })
+
+//localStorage.clear();

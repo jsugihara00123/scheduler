@@ -30,6 +30,10 @@ textarea{
   border-radius: 15px;
 }
 
+#addedToLS {
+  text-align: center;
+}
+
 .row {
   white-space: pre-wrap;
   height: 80px;
